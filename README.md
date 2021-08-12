@@ -1,4 +1,4 @@
-# Marwaita
+# Marwaita-X
 GTK theme for Budgie desktop
 
 ## Requirments
