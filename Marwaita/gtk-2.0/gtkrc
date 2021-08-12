@@ -1,4 +1,4 @@
-gtk_color_scheme = "fg_color:#000\nbg_color:#eee\nbase_color:#fff\ntext_color:#000\nselected_bg_color:#0f6ee3\nselected_fg_color:#fff\ntooltip_bg_color:#eee\ntooltip_fg_color:#000\nborder_color:#afafaf"
+gtk_color_scheme = "fg_color:#101010\nbg_color:#eee\nbase_color:#fff\ntext_color:#101010\nselected_bg_color:#0f6ee3\nselected_fg_color:#fff\ntooltip_bg_color:#eee\ntooltip_fg_color:#101010\nborder_color:#afafaf"
 
 style "default"
 {
@@ -21,15 +21,15 @@ style "default"
 	GtkWidget::interior_focus = 2
 	GtkWidget::link-color = @selected_bg_color
 	GtkWidget::visited-link-color = shade(0.8,@selected_bg_color)
-	  
+
 	GtkToolbar     :: shadow-type		= GTK_SHADOW_NONE
 	GtkMenuBar     :: shadow-type        = GTK_SHADOW_NONE
-	  
+
 	GtkToolbar     ::internal-padding     = 4
-	  
-	GtkScrollbar		::has-backward-stepper              = 0  
+
+	GtkScrollbar		::has-backward-stepper              = 0
 	GtkScrollbar		::has-forward-stepper               = 0
-	
+
 	GtkCheckButton ::indicator-size       = 16
 
 	GtkProgressBar		::min-vertical-bar-width            = 6
@@ -45,7 +45,7 @@ style "default"
 	text[SELECTED]  = @fg_color
 	fg[INSENSITIVE]  = mix(0.5, @base_color, @fg_color)
 	text[INSENSITIVE] = mix(0.5, @base_color, @fg_color)
-  
+
 	bg[NORMAL]      = @bg_color
 	base[NORMAL]    = @base_color
 	bg[PRELIGHT]    = @bg_color
@@ -56,8 +56,8 @@ style "default"
 	base[SELECTED]  = mix(0.3,@selected_bg_color,@base_color)
 	bg[INSENSITIVE] = @bg_color
 	base[INSENSITIVE] = @bg_color
-	
-	engine "murrine" 
+
+	engine "murrine"
 {
 	contrast = 1.0
 	arrowstyle = 2 #to draw filled arrows.
@@ -97,7 +97,7 @@ style "button"
 	bg[ACTIVE] = mix(0.2, @fg_color,@base_color)
 }
 
-style "radiocheck" 
+style "radiocheck"
 {
 	text[NORMAL]   = @selected_fg_color            # Text in window
 	text[PRELIGHT] = @selected_fg_color            # Text on Mouseover
@@ -106,11 +106,11 @@ style "radiocheck"
 	bg[SELECTED] = @selected_bg_color
 }
 
-style "progressbar" 
+style "progressbar"
 {
 	xthickness = 0
 	ythickness = 0
-	
+
 	fg[PRELIGHT] = @selected_fg_color
 }
 
@@ -119,23 +119,23 @@ style "scale"
 	GtkRange       ::slider-width  = 14
 	GtkScale       ::slider-length = 14
 	GtkScale		    ::trough-side-details = 1
-	
+
 	engine "murrine" {roundness = 9999}
-	
+
 	bg[NORMAL] = @selected_fg_color
 	bg[PRELIGHT] = @selected_fg_color
 }
 
-style "menubar" 
+style "menubar"
 {
 }
 
-style "menubaritem" 
+style "menubaritem"
 {
 	fg[NORMAL] = @fg_color
 }
 
-style "menu" 
+style "menu"
 {
 	xthickness = 1
 	ythickness = 4
@@ -144,7 +144,7 @@ style "menu"
 
 }
 
-style "menuitem" 
+style "menuitem"
 {
 	xthickness = 4
 	ythickness = 4
@@ -152,7 +152,7 @@ style "menuitem"
 	engine "murrine" { contrast = 0.0}
 
 	bg[SELECTED] = mix(0.1,@fg_color,@bg_color)
-	
+
 	text[NORMAL]	= @fg_color
 	text[PRELIGHT] = @fg_color
 	fg[PRELIGHT] = @fg_color
@@ -166,7 +166,7 @@ style "menu-separator"
 	GtkWidget::separator-height = 1
 	xthickness = 1
 	ythickness = 2
-	
+
 	engine "hcengine" { edge_thickness = 1}
 	fg[NORMAL] = @border_color
 }
@@ -177,12 +177,12 @@ style "separator"
 	fg[NORMAL] = @border_color
 }
 
-style "toolbar" 
+style "toolbar"
 {
 
 }
 
-style "scrollbar" 
+style "scrollbar"
 {
 	engine "murrine" { roundness = 0 }
 	bg[SELECTED] = mix(0.5,@fg_color, @base_color)
@@ -201,7 +201,7 @@ style "notebook_viewport" {
 	bg[NORMAL] = @base_color
 }
 
-style "tooltips" 
+style "tooltips"
 {
 	xthickness	= 6
 	ythickness	= 6

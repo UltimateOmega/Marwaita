@@ -1,4 +1,3 @@
-
 @import url("gtk-version.css");
 @import url("widgets.css");
 @import url("alternative.css");
@@ -7,7 +6,7 @@
  * Colors *
  **********/
 
-@define-color gtk_fg_color black;
+@define-color gtk_fg_color #131313;
 @define-color gtk_text_color @gtk_fg_color;
 @define-color gtk_bg_color #eee;
 @define-color gtk_base_color #fff;
@@ -156,4 +155,3 @@
 @define-color BLACK_500 #333;
 @define-color BLACK_700 #1a1a1a;
 @define-color BLACK_900 #000;
-
